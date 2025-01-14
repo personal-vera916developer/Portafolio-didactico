@@ -5,16 +5,16 @@
   "main": "app.js",
   "type": "module",
   "imports": {
-    "#*": "./src/*"
+    "#*": "./Src/*"
   },
   "directories": {
-    "test": "test"
+    "test": "Test",
+    "src": "Src"
   },
   "scripts": {
-    "start": "node --watch --env-file=.env src/app.js",
+    "start": "node --watch --env-file=.env Src/app.js",
     "test": "node --test",
     "prepare": "husky"
-    
   },
   "repository": {
     "type": "git",
@@ -33,12 +33,16 @@
   },
   "homepage": "https://github.com/personal-vera916developer/Portafolio-didactico#readme",
   "devDependencies": {
-    "express": "^4.21.2",
     "husky": "^9.1.7",
     "standard": "^17.1.2",
     "supertest": "^7.0.0"
   },
   "eslintConfig": {
     "extends": "standard"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "http-status": "^2.1.0",
+    "react": "^19.0.0"
   }
 }

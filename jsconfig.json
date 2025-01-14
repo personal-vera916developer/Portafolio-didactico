@@ -4,10 +4,10 @@
       "module": "commonjs",
       "paths": {
         "#*": [
-          "./src/*"
+          "./Src/*"
         ],
         "@*": [
-          "./src/*"
+          "./Src/*"
         ]
       }
     }

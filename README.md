@@ -66,21 +66,31 @@ npm run build
 La organización del proyecto permite un flujo claro y eficiente:
 
 ```
-root/
-├── resources/
-│   ├── 3d/
-│   └── images/
-├── src/
-│   ├── favicon/
-│   ├── javascript/
-│   ├── shaders/
-│   └── style/
-├── static/
+Raiz/
+├── Src/
+│   ├── Controllers/
+│   ├── Models/
+│   ├── Routes/
+│   │    └── index.js
+│   ├── Views/
+│   ├── Utils/
+│   ├──  ├── env.config.js
+│   │    └── index.js
+│   ├── Schemas/
+│   └── app.js
+├── Test/
+│   ├──
+│   ├──
+│   ├──
+│   └──
+├── .env.test
 ├── .gitignore
-├── license.md
+├── .node-version
+├── jsconfig.json
+├── LICENCE.md
 ├── package.json
 ├── readme.md
-└── vite.config.js
+└──
 ```
 
 ---
