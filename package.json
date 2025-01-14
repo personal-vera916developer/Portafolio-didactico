@@ -11,9 +11,10 @@
     "test": "test"
   },
   "scripts": {
-    "test": "node --test --env-file=.env.test",
     "start": "node --watch --env-file=.env src/app.js",
-    "prepare": "HUsky"
+    "test": "node --test",
+    "prepare": "husky"
+    
   },
   "repository": {
     "type": "git",
