@@ -1,0 +1,43 @@
+{
+  "name": "portafolio-didactico",
+  "version": "1.0.0",
+  "description": "Portafolio didactico veradeveloper",
+  "main": "app.js",
+  "type": "module",
+  "imports": {
+    "#*": "./src/*"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node --test --env-file=.env.test",
+    "start": "node --watch --env-file=.env src/app.js",
+    "prepare": "HUsky"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/personal-vera916developer/Portafolio-didactico.git"
+  },
+  "keywords": [
+    "portafilio",
+    "dictatico",
+    "veradeveloper",
+    "nodeSJ"
+  ],
+  "author": "Esteban Vera",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/personal-vera916developer/Portafolio-didactico/issues"
+  },
+  "homepage": "https://github.com/personal-vera916developer/Portafolio-didactico#readme",
+  "devDependencies": {
+    "express": "^4.21.2",
+    "husky": "^9.1.7",
+    "standard": "^17.1.2",
+    "supertest": "^7.0.0"
+  },
+  "eslintConfig": {
+    "extends": "standard"
+  }
+}
