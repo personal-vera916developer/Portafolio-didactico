@@ -28,4 +28,8 @@ jobs:
         cache: 'npm'
     #- run: npm ci
     #- run: npm run build --if-present
-    - run: npm test; gh pr close --comment "El PR esta cerrado por test fallidos" --delete-branch "1"
+    - run: |
+          npm test || {
+            gh pr close --comment "El PR está cerrado por tests fallidos" --delete-branch "1"
+            }
+
