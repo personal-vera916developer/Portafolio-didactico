@@ -1,8 +1,16 @@
 {
-  "name": "vite-project",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "name": "portafolio-didactico",
+  "version": "1.0.0",
+  "description": "Portafolio didactico veradeveloper",
+  "main": "app.js",
+  "type": "module",  
+  "imports": {
+    "#*": "./src/*"
+  },
+  "directories": {
+    "test": "test",
+    "src": "src"
+  },
   "scripts": {
     "test": "node --test",
     "test:coverage": "vitest --coverage",
@@ -11,6 +19,22 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/personal-vera916developer/Portafolio-didactico.git"
+  },
+  "keywords": [
+    "portafilio",
+    "dictatico",
+    "veradeveloper",
+    "nodeSJ"
+  ],
+  "author": "Esteban Vera",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/personal-vera916developer/Portafolio-didactico/issues"
+  },
+  "homepage": "https://github.com/personal-vera916developer/Portafolio-didactico#readme",
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -19,13 +43,12 @@
   "devDependencies": {
     "@eslint/js": "^9.17.0",
     "@vitejs/plugin-react-swc": "^3.5.0",
-    "eslint": "^9.17.0",
-    "eslint-plugin-react": "^7.37.2",
-    "eslint-plugin-react-hooks": "^5.0.0",
-    "eslint-plugin-react-refresh": "^0.4.16",
     "globals": "^15.14.0",
     "standard": "^17.1.2",
     "vite": "^6.0.5",
     "vitest": "^3.0.1"
+  },
+  "eslintConfig": {
+    "extends": "standard"
   }
 }
